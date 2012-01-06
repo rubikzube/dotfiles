@@ -10,7 +10,11 @@ curl -so ~/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 ```
 
-+ Clone the repo (be sure to grab submodules)
++ Install VIM Themes to .vim/colors/
+
+[Molokai](https://bitbucket.org/sjl/dotfiles/raw/2f979e8ca55a/vim/colors/molokai.vim)
+
++ Clone the repo
 
 ```sh
 git clone --recursive git@github.com:craveytrain/dotfiles.git
