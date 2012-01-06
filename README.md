@@ -1,4 +1,6 @@
-# Installation instructions and Rake file borrowed from https://github.com/craveytrain/dotfiles/
+# Installation 
+
+*Instructions and Rake file borrowed from https://github.com/craveytrain/dotfiles/*
 
 1. Clone the repo (be sure to grab submodules)
 
@@ -17,8 +19,9 @@ cd dotfiles
 rake install
 ```
 
-# VIM Sources
+# Sources
 
+## Vim
 * [Steve Losh] (http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
 * [Vimcasts] (http://vimcasts.org/)
 * [Derek Wyatt] (http://ontwik.com/tools/vim-from-novice-to-professional-by-derek-wyatt-p1/)
