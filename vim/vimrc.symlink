@@ -1,20 +1,20 @@
-# From http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+" From http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 
-# Load in pathogen
+" Load in pathogen
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 filetype plugin indent on
 
-# Remove backwards compatibility
+" Remove backwards compatibility
 set nocompatible
 set modelines=0
 
-# Tabs
+" Tabs
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-# Misc
+" Misc
 set encoding=utf-8
 set scrolloff=3
 set autoindent
@@ -32,7 +32,7 @@ set laststatus=2
 set relativenumber
 set undofile
 
-# Search
+" Search
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -45,17 +45,17 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
-# Wrapping 
+" Wrapping 
 set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
-# Show invisibles
+" Show invisibles
 set list
 set listchars=tab:▸\ ,eol:¬
 
-# Disable arrows
+" Disable arrows
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -67,12 +67,11 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-# Remap so that ; performs the same thing as :
+" Remap so that ; performs the same thing as :
 nnoremap ; :
 
-# Save on losing focus
+" Save on losing focus
 au FocusLost * :wa
 
-# Folding leader
+" Folding leader
 nnoremap <leader>ft Vatzf
-
