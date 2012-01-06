@@ -3,6 +3,7 @@
 *Instructions and Rake file borrowed from https://github.com/craveytrain/dotfiles/*
 
 1. Install Pathogen
+
 ```sh
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -so ~/.vim/autoload/pathogen.vim \
@@ -10,16 +11,19 @@ curl -so ~/.vim/autoload/pathogen.vim \
 ```
 
 2. Clone the repo (be sure to grab submodules)
+
 ```sh
 git clone --recursive git@github.com:craveytrain/dotfiles.git
 ```
 
 3. Get inside the repo
+
 ```sh
 cd dotfiles
 ```
 
 4. Run the Rakefile
+
 ```sh
 rake install
 ```
