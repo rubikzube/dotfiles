@@ -17,7 +17,7 @@ curl -so ~/.vim/autoload/pathogen.vim \
 + Clone the repo
 
 ```sh
-git clone --recursive git@github.com:craveytrain/dotfiles.git
+git clone --recursive git@github.com:rubikzube/dotfiles.git
 ```
 
 + Get inside the repo
