@@ -1,7 +1,26 @@
 require 'rake'
 
+def check_directory(directory)
+  if not File.directory?(directory) 
+		Dir::mkdir(directory)
+	end
+end
+
 desc "Hook our dotfiles into system-standard positions."
 task :install do
+	
+	home = ENV["HOME"]
+	
+	### Install Pathogen ###
+	puts "Install Pathogen (y)?"
+	if STDIN.gets.chomp.downcase == 'y'
+		autoload_dir = "#{home}/.vim/autoload"
+		bundle_dir = "#{home}/.vim/bundle"
+		pathogen_url = 'https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim'
+		check_directory autoload_dir
+		check_directory bundle_dir
+		`curl -so #{autoload_dir}/pathogen.vim #{pathogen_url}`
+	end
 	
 	### Sym link in all configuration files, which have the symlink sufflix ### 
 	
@@ -9,7 +28,6 @@ task :install do
 	skip_all = false
 	overwrite_all = false
 	backup_all = false
-	home = ENV["HOME"]
 	
 	linkables.each do |linkable|
 		overwrite = false
@@ -36,15 +54,13 @@ task :install do
 	end
 	
 	### Install VIM themes ### 
-	color_dir = "#{home}/.vim/colors"
-	if File.directory?(color_dir) 
-		puts "Install VIM themes y/n?"
-		get_colors = STDIN.gets.chomp
-		if get_colors == 'y'
-			`curl -so #{color_dir}/solarized.vim https://github.com/altercation/vim-colors-solarized/tree/master/colors/solarized.vim`
-			`curl -so #{color_dir}/molokai.vim https://bitbucket.org/sjl/dotfiles/raw/2f979e8ca55a/vim/colors/molokai.vim`
-		end
+	puts "Install VIM themes (y)?"
+	if STDIN.gets.chomp.downcase == 'y'
+		color_dir = "#{home}/.vim/colors"
+		check_directory color_dir
+		`curl -so #{color_dir}/solarized.vim https://github.com/altercation/vim-colors-solarized/tree/master/colors/solarized.vim`
+		`curl -so #{color_dir}/molokai.vim https://bitbucket.org/sjl/dotfiles/raw/2f979e8ca55a/vim/colors/molokai.vim`
 	end
-
+	
 end
 task :default => 'install'
