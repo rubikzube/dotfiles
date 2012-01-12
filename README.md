@@ -1,18 +1,6 @@
 # Installation 
 
-*Instructions and Rake file borrowed from https://github.com/craveytrain/dotfiles/*
-
-+ Install Pathogen
-
-```sh
-mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-curl -so ~/.vim/autoload/pathogen.vim \
-    https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
-```
-
-+ Install VIM Themes to .vim/colors/
-
-[Molokai](https://bitbucket.org/sjl/dotfiles/raw/2f979e8ca55a/vim/colors/molokai.vim)
+*Instructions and Rake file started from https://github.com/craveytrain/dotfiles/*
 
 + Clone the repo
 
