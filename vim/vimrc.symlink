@@ -78,3 +78,6 @@ au FocusLost * :wa
 
 " Folding leader
 nnoremap <leader>ft Vatzf
+
+" NerdTREE
+autocmd vimenter * if !argc() | NERDTree | endif
