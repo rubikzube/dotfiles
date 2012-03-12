@@ -1,7 +1,7 @@
 require 'rake'
 
 def check_directory(directory)
-  if not File.directory?(directory) 
+	if not File.directory?(directory) 
 		Dir::mkdir(directory)
 	end
 end

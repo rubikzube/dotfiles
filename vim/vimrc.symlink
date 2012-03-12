@@ -62,6 +62,10 @@ highlight ColorColumn ctermbg=DarkGrey
 set list
 set listchars=tab:▸\ ,eol:¬
 
+" Reset the special character colors on Molokai
+hi SpecialKey ctermfg=234
+hi NonText ctermfg=234
+
 " Disable arrows
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -80,4 +84,6 @@ au FocusLost * :wa
 nnoremap <leader>ft Vatzf
 
 " NerdTREE
+autocmd vimenter * NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
