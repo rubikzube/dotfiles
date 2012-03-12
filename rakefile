@@ -20,21 +20,43 @@ task :install do
 		check_directory bundle_dir
 		`curl -so #{autoload_dir}/pathogen.vim #{pathogen_url}`
 	end
-	
-	puts "Install NerdTree (y)?"
-	if STDIN.gets.chomp.downcase == 'y'
-		nerdtree_url = 'https://github.com/scrooloose/nerdtree.git'
-		check_directory bundle_dir
-		`git clone #{nerdtree_url} #{bundle_dir}/nerdtree`
-	end
-	
-	puts "Install Syntastic (y)?"
-	if STDIN.gets.chomp.downcase == 'y'
-		syntastic_url = 'https://github.com/scrooloose/syntastic.git'
-		check_directory bundle_dir
-		`git clone #{syntastic_url} #{bundle_dir}/syntastic`
-	end
-	
+
+	bundle_list = [
+		{
+			'name'=>'NerdTree',
+			'directory'=>'nerdtree',
+			'url'=>'https://github.com/scrooloose/nerdtree.git'
+		}, 
+		{
+			'name'=>'Syntastic',
+			'directory'=>'syntastic',
+			'url'=>'https://github.com/scrooloose/syntastic.git'
+		}, 
+		{
+			'name'=>'Vim Surround',
+			'directory'=>'vim-surround',
+			'url'=>'https://github.com/tpope/vim-surround.git'
+		}, 
+		{
+			'name'=>'Vim Fugitive',
+			'directory'=>'vim-fugitive',
+			'url'=>'https://github.com/tpope/vim-fugitive.git'
+		}, 
+		{
+			'name'=>'Vim Statline',
+			'directory'=>'vim-statline',
+			'url'=>'https://github.com/millermedeiros/vim-statline.git'
+		} 
+	]
+
+	bundle_list.each { |bundle|
+		puts "Install #{bundle['name']} (y)?"
+		if STDIN.gets.chomp.downcase == 'y'
+			check_directory bundle_dir
+			`git clone #{bundle['url']} #{bundle_dir}/#{bundle['directory']}`
+		end
+	}
+
 	puts "Install themes (y)?"
 	if STDIN.gets.chomp.downcase == 'y'
 		color_dir = "#{home}/.vim/colors"

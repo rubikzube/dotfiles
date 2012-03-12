@@ -66,14 +66,6 @@ set listchars=tab:▸\ ,eol:¬
 hi SpecialKey ctermfg=234
 hi NonText ctermfg=234
 
-" Disable arrows
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
-
 " Remap so that ; performs the same thing as :
 nnoremap ; :
 
