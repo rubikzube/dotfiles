@@ -32,7 +32,6 @@ task :install do
 	if STDIN.gets.chomp.downcase == 'y'
 		color_dir = "#{home}/.vim/colors"
 		check_directory color_dir
-		`curl -so #{color_dir}/solarized.vim https://raw.github.com/altercation/vim-colors-solarized/tree/master/colors/solarized.vim`
 		`curl -so #{color_dir}/molokai.vim https://bitbucket.org/sjl/dotfiles/raw/2f979e8ca55a/vim/colors/molokai.vim`
 	end
 	
