@@ -28,6 +28,13 @@ task :install do
 		`git clone #{nerdtree_url} #{bundle_dir}/nerdtree`
 	end
 	
+	puts "Install Syntastic (y)?"
+	if STDIN.gets.chomp.downcase == 'y'
+		syntastic_url = 'https://github.com/scrooloose/syntastic.git'
+		check_directory bundle_dir
+		`git clone #{syntastic_url} #{bundle_dir}/syntastic`
+	end
+	
 	puts "Install themes (y)?"
 	if STDIN.gets.chomp.downcase == 'y'
 		color_dir = "#{home}/.vim/colors"
