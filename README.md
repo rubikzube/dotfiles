@@ -27,3 +27,4 @@ rake install
 * [Vimcasts] (http://vimcasts.org/)
 * [Derek Wyatt] (http://ontwik.com/tools/vim-from-novice-to-professional-by-derek-wyatt-p1/)
 * [Ack] (http://betterthangrep.com/)
+* [Xterm Color Chart] (http://upload.wikimedia.org/wikipedia/commons/9/95/Xterm_color_chart.png)
