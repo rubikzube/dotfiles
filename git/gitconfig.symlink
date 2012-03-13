@@ -1,0 +1,14 @@
+[user]
+	name = Zubin Tiku
+	email = rubikzube@gmail.com
+[color]
+	ui=auto
+[alias]
+	mmlog = log --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%cr) %C(bold blue)<%an>%Creset %s %C(yellow)%d%Creset ' --abbrev-commit --date=relative
+	mmdiff =log --graph --pretty=format:'%C(reverse red)%h%Creset%C(reverse green)(%cr)%Creset%C(reverse blue)<%an>%Creset %s %C(reverse yellow)%d%Creset' --abbrev-commit --date=relative -p
+[core]
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true 
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
