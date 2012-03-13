@@ -25,27 +25,27 @@ task :install do
 		{
 			'name'=>'NerdTree',
 			'directory'=>'nerdtree',
-			'url'=>'https://github.com/scrooloose/nerdtree.git'
+			'url'=>'git://github.com/scrooloose/nerdtree.git'
 		}, 
 		{
 			'name'=>'Syntastic',
 			'directory'=>'syntastic',
-			'url'=>'https://github.com/scrooloose/syntastic.git'
+			'url'=>'git://github.com/scrooloose/syntastic.git'
 		}, 
 		{
 			'name'=>'Vim Surround',
 			'directory'=>'vim-surround',
-			'url'=>'https://github.com/tpope/vim-surround.git'
+			'url'=>'git://github.com/tpope/vim-surround.git'
 		}, 
 		{
 			'name'=>'Vim Fugitive',
 			'directory'=>'vim-fugitive',
-			'url'=>'https://github.com/tpope/vim-fugitive.git'
+			'url'=>'git://github.com/tpope/vim-fugitive.git'
 		}, 
 		{
 			'name'=>'Vim Statline',
 			'directory'=>'vim-statline',
-			'url'=>'https://github.com/millermedeiros/vim-statline.git'
+			'url'=>'git://github.com/millermedeiros/vim-statline.git'
 		} 
 	]
 
