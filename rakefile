@@ -10,12 +10,14 @@ desc "Hook our dotfiles into system-standard positions."
 task :install do
 	
 	home = ENV["HOME"]
+	vim_dir = "#{home}/.vim"
 	autoload_dir = "#{home}/.vim/autoload"
 	bundle_dir = "#{home}/.vim/bundle"
 	
 	puts "Install Pathogen (y)?"
 	if STDIN.gets.chomp.downcase == 'y'
 		pathogen_url = 'https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim'
+		check_directory vim_dir
 		check_directory autoload_dir
 		check_directory bundle_dir
 		`curl -so #{autoload_dir}/pathogen.vim #{pathogen_url}`
