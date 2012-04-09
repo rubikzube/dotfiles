@@ -35,6 +35,11 @@ Thumbs.db
 ############
 *._*
 
+# Vim #
+############
+*.un~
+*.swp
+
 # Node Modules #
 ############
 node_modules
