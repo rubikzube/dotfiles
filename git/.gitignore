@@ -34,3 +34,7 @@ Thumbs.db
 # Textmate #
 ############
 *._*
+
+# Node Modules #
+############
+node_modules
