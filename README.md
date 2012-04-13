@@ -17,7 +17,7 @@ cd dotfiles
 + Run the Rakefile
 
 ```sh
-rake install
+rake
 ```
 
 # Sources
