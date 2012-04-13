@@ -38,6 +38,9 @@ set laststatus=2
 set relativenumber
 set undofile
 
+" Leader
+let mapleader = ","
+
 " Search
 nnoremap / /\v
 vnoremap / /\v
@@ -72,15 +75,29 @@ nnoremap ; :
 " Save on losing focus
 au FocusLost * :wa
 
-" Folding leader
-nnoremap <leader>ft Vatzf
-
-" Mouse events
-set mouse=a
-
 " Statusline
 set statusline+=%{fugitive#statusline()}
 
 " NerdTREE
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+nnoremap <leader>f :NERDTreeToggle<CR>
+
+" Turn Mouse On
+set mouse=a
+
+" Mouse Toggle
+nnoremap <leader>m :call <SID>MouseToggle()<CR>
+function! s:MouseToggle()
+	if &mouse == "c"
+		set mouse=a
+		echo "Mouse is for Vim"
+	else
+		set mouse=c
+		echo "Mouse is for Terminal"
+	endif
+endfunction
+
+" Syntastic 
+nnoremap <leader>s :SyntasticCheck<CR>
+nnoremap <leader>e :SyntasticErrors<CR>
