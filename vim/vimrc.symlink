@@ -99,5 +99,7 @@ function! s:MouseToggle()
 endfunction
 
 " Syntastic 
-nnoremap <leader>s :SyntasticCheck<CR>
-nnoremap <leader>e :SyntasticErrors<CR>
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list=1
+nnoremap <leader>c :SyntasticCheck<CR>
