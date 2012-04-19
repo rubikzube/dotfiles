@@ -7,6 +7,7 @@ colorscheme molokai
 syntax enable
 
 " Load in pathogen
+filetype on
 filetype off
 call pathogen#infect()
 call pathogen#helptags()
