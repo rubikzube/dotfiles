@@ -10,7 +10,6 @@ syntax enable
 filetype on
 filetype off
 call pathogen#infect()
-call pathogen#helptags()
 filetype plugin indent on
 
 " Remove backwards compatibility
