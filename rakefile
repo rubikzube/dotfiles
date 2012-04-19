@@ -6,14 +6,15 @@ def check_directory(directory)
 	end
 end
 
-desc "Hook our dotfiles into system-standard positions."
-task :install do
-	
-	home = ENV["HOME"]
+home = ENV["HOME"]
+
+task :install_vim do
 	vim_dir = "#{home}/.vim"
 	autoload_dir = "#{home}/.vim/autoload"
 	bundle_dir = "#{home}/.vim/bundle"
-	
+	color_dir = "#{home}/.vim/colors"
+
+	### Pathogen is the loader for VIM plugins
 	puts "Install Pathogen (y)?"
 	if STDIN.gets.chomp.downcase == 'y'
 		pathogen_url = 'https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim'
@@ -23,62 +24,60 @@ task :install do
 		`curl -so #{autoload_dir}/pathogen.vim #{pathogen_url}`
 	end
 
+	### Install VIM plugins
 	bundle_list = [
-		{
-			'name'=>'NerdTree',
-			'directory'=>'nerdtree',
-			'url'=>'git://github.com/scrooloose/nerdtree.git'
-		}, 
-		{
-			'name'=>'Syntastic',
-			'directory'=>'syntastic',
-			'url'=>'git://github.com/scrooloose/syntastic.git'
-		}, 
-		{
-			'name'=>'Vim Surround',
-			'directory'=>'vim-surround',
-			'url'=>'git://github.com/tpope/vim-surround.git'
-		}, 
-		{
-			'name'=>'Vim Fugitive',
-			'directory'=>'vim-fugitive',
-			'url'=>'git://github.com/tpope/vim-fugitive.git'
-		}, 
-		{
-			'name'=>'Vim Statline',
-			'directory'=>'vim-statline',
-			'url'=>'git://github.com/millermedeiros/vim-statline.git'
-		} 
+		'git://github.com/scrooloose/nerdtree.git',
+		'git://github.com/scrooloose/syntastic.git',
+		'git://github.com/tpope/vim-surround.git',
+		'git://github.com/tpope/vim-fugitive.git',
+		'git://github.com/millermedeiros/vim-statline.git',
+		'git://github.com/Lokaltog/vim-easymotion.git',
+		'git://github.com/kien/ctrlp.vim.git',
+		'git://github.com/ervandew/supertab.git',
+		'git://github.com/msanders/snipmate.vim.git'
 	]
 
 	bundle_list.each { |bundle|
-		puts "Install #{bundle['name']} (y)?"
+		bundle_name = bundle.split('/').last.sub(/\.git$/, '')
+		puts "Install bundle #{bundle_name} (y)?"
 		if STDIN.gets.chomp.downcase == 'y'
-			check_directory bundle_dir
-			`git clone #{bundle['url']} #{bundle_dir}/#{bundle['directory']}`
+			check_directory "#{bundle_dir}/#{bundle_name}"
+			`git clone #{bundle} #{bundle_dir}/#{bundle_name}`
 		end
 	}
 
-	puts "Install themes (y)?"
-	if STDIN.gets.chomp.downcase == 'y'
-		color_dir = "#{home}/.vim/colors"
-		check_directory color_dir
-		`curl -so #{color_dir}/molokai.vim https://bitbucket.org/sjl/dotfiles/raw/2f979e8ca55a/vim/colors/molokai.vim`
-	end
-	
-	### Sym link in all configuration files, which have the symlink sufflix ### 	
+	### Install VIM themes
+	color_list = [ 
+		'git://github.com/vim-scripts/molokai.git',
+		'git://github.com/altercation/vim-colors-solarized.git',
+		'git://github.com/tpope/vim-vividchalk.git',
+		'git://github.com/larssmit/vim-getafe.git'
+	]
+
+	color_list.each { |color| 
+		color_name = color.split('/').last.sub(/\.git$/, '')
+		puts "Install color #{color_name} (y)?"
+		if STDIN.gets.chomp.downcase == 'y'
+			check_directory "#{color_dir}/#{color_name}"
+			`git clone #{color} #{color_dir}/#{color_name}`
+			`mv #{color_dir}/#{color_name}/colors/* #{color_dir}/`
+		end
+	}
+end
+
+task :install_symlinks do
+
 	linkables = Dir.glob('*/**{.symlink}')
 	skip_all = false
 	overwrite_all = false
 	backup_all = false
-	
-	linkables.each do |linkable|
+
+	### Sym link in all configuration files, which have the symlink sufflix
+	linkables.each { |linkable|
 		overwrite = false
-		backup = false
-		
+		backup = false		
 		file = linkable.split('/').last.split('.symlink').last
 		target = "#{home}/.#{file}"
-	
 		if File.exists?(target) || File.symlink?(target)
 			unless skip_all || overwrite_all || backup_all
 			puts "File already exists: #{target}, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all"
@@ -94,7 +93,7 @@ task :install do
 			`mv "$HOME/.#{file}" "$HOME/.#{file}.backup"` if backup || backup_all
 		end
 		`ln -s "$PWD/#{linkable}" "#{target}"`
-	end
-	
+	}
 end
-task :default => 'install'
+
+task :default => [:install_vim, :install_symlinks]

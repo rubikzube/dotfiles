@@ -9,6 +9,7 @@ syntax enable
 " Load in pathogen
 filetype off
 call pathogen#infect()
+call pathogen#helptags()
 filetype plugin indent on
 
 " Remove backwards compatibility
@@ -57,8 +58,6 @@ vnoremap <tab> %
 set nowrap
 set textwidth=80
 set formatoptions=qrn1
-set colorcolumn=85
-highlight ColorColumn ctermbg=234
 
 " Remap so that ; performs the same thing as :
 nnoremap ; :
@@ -93,6 +92,9 @@ function! s:MouseToggle()
 	endif
 endfunction
 
+" File find
+nnoremap <leader>s :CtrlP<CR>
+
 " Syntastic 
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
@@ -107,6 +109,6 @@ set foldlevel=1
 
 " Invisibles
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ 
 hi SpecialKey ctermfg=234
 hi NonText ctermfg=234
