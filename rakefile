@@ -9,10 +9,12 @@ end
 home = ENV["HOME"]
 
 task :install_vim do
+
 	vim_dir = "#{home}/.vim"
 	autoload_dir = "#{home}/.vim/autoload"
 	bundle_dir = "#{home}/.vim/bundle"
 	color_dir = "#{home}/.vim/colors"
+	current_dir = Dir.pwd
 
 	### Pathogen is the loader for VIM plugins
 	puts "Install Pathogen (y)?"
@@ -31,18 +33,28 @@ task :install_vim do
 		'git://github.com/tpope/vim-surround.git',
 		'git://github.com/tpope/vim-fugitive.git',
 		'git://github.com/millermedeiros/vim-statline.git',
-		'git://github.com/Lokaltog/vim-easymotion.git',
 		'git://github.com/kien/ctrlp.vim.git',
 		'git://github.com/ervandew/supertab.git',
-		'git://github.com/msanders/snipmate.vim.git'
+		'git://github.com/msanders/snipmate.vim.git',
+		'git://github.com/lunaru/vim-twig.git'
 	]
 
 	bundle_list.each { |bundle|
 		bundle_name = bundle.split('/').last.sub(/\.git$/, '')
-		puts "Install bundle #{bundle_name} (y)?"
-		if STDIN.gets.chomp.downcase == 'y'
-			check_directory "#{bundle_dir}/#{bundle_name}"
-			`git clone #{bundle} #{bundle_dir}/#{bundle_name}`
+		bundle_path = "#{bundle_dir}/#{bundle_name}"
+		if not File.directory?("#{bundle_path}")
+			puts "Install bundle #{bundle_name} (y)?"
+			if STDIN.gets.chomp.downcase == 'y'
+				Dir::mkdir("#{bundle_path}")
+				`git clone #{bundle} #{bundle_path}`
+			end
+		else
+			puts "Update bundle #{bundle_name} (y)?"
+			if STDIN.gets.chomp.downcase == 'y'
+				`cd #{bundle_path}`
+				`git pull`
+				`cd #{current_dir}`
+			end
 		end
 	}
 
