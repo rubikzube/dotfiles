@@ -28,15 +28,19 @@ task :install_vim do
 
 	### Install VIM plugins
 	bundle_list = [
-		'git://github.com/scrooloose/nerdtree.git',
-		'git://github.com/scrooloose/syntastic.git',
-		'git://github.com/tpope/vim-surround.git',
-		'git://github.com/tpope/vim-fugitive.git',
-		'git://github.com/millermedeiros/vim-statline.git',
-		'git://github.com/kien/ctrlp.vim.git',
-		'git://github.com/ervandew/supertab.git',
-		'git://github.com/msanders/snipmate.vim.git',
-		'git://github.com/lunaru/vim-twig.git'
+		'git://github.com/scrooloose/nerdtree.git', # File folder
+		'git://github.com/scrooloose/syntastic.git', # Syntax checking
+		'git://github.com/tpope/vim-surround.git', # Code manipulation
+		'git://github.com/tpope/vim-fugitive.git', # Git integration
+		'git://github.com/millermedeiros/vim-statline.git', # Useful statusline
+		'git://github.com/kien/ctrlp.vim.git', # Finding files
+		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
+		'git://github.com/msanders/snipmate.vim.git', # Snippets
+		'git://github.com/lunaru/vim-twig.git', # Twig syntax
+		'git://github.com/juvenn/mustache.vim.git', # Mustache syntax
+		'git://github.com/digitaltoad/vim-jade.git', # Jade syntax
+		'git://github.com/kchmck/vim-coffee-script.git', # Coffeescript syntax
+		'git://github.com/tpope/vim-markdown.git' # Better markdown
 	]
 
 	bundle_list.each { |bundle|

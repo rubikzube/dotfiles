@@ -1,13 +1,6 @@
 " From http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 
-" Fonts + Colors
-set guifont=Monaco:h10
-set t_Co=256
-colorscheme molokai
-syntax enable
-
 " Load in pathogen
-filetype on
 filetype off
 call pathogen#infect()
 filetype plugin indent on
@@ -15,6 +8,12 @@ filetype plugin indent on
 " Remove backwards compatibility
 set nocompatible
 set modelines=0
+
+" Fonts + Colors
+set guifont=Monaco:h10
+set t_Co=256
+colorscheme molokai
+syntax enable
 
 " Tabs
 set tabstop=2
