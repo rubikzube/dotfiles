@@ -56,9 +56,9 @@ task :install_vim do
 		else
 			puts "Update bundle #{bundle_name} (y)?"
 			if STDIN.gets.chomp.downcase == 'y'
-				`cd #{bundle_path}`
+				Dir.chdir(bundle_path)
 				`git pull -v`
-				`cd #{current_dir}`
+				Dir.chdir(current_dir)
 			end
 		end
 	}
