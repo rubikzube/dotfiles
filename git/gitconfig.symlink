@@ -13,3 +13,7 @@
 [user]
 	name = Zubin Tiku
 	email = rubikzube@gmail.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
