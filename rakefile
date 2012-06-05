@@ -41,7 +41,8 @@ task :install_vim do
 		'git://github.com/digitaltoad/vim-jade.git', # Jade syntax
 		'git://github.com/kchmck/vim-coffee-script.git', # Coffeescript syntax
 		'git://github.com/tpope/vim-markdown.git', # Markdown syntax
-		'git://github.com/leshill/vim-json.git' # JSON syntax
+		'git://github.com/leshill/vim-json.git', # JSON syntax
+		'git://github.com/rodjek/vim-puppet.git' # Puppet
 	]
 
 	bundle_list.each { |bundle|
