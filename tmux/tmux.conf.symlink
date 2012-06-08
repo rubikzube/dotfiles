@@ -1,3 +1,6 @@
+# Support 256 colors
+set -g default-terminal "screen-256color"
+
 # Remap prefix to Control + a
 unbind C-b
 set -g prefix C-a
@@ -9,12 +12,6 @@ bind-key space next-window
 unbind %
 bind | split-window -h
 bind - split-window -v
-
-# Pane navigation with vim-style keys
-bind h select-pane -L
-bind l select-pane -R
-bind k select-pane -U
-bind j select-pane -D
 
 # Outlining
 set -g status-bg black
