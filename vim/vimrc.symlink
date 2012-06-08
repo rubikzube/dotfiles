@@ -37,6 +37,10 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 
+" Move the swap and undo files out of the way
+set directory=/tmp
+set undodir=/tmp
+
 " Leader
 let mapleader = ","
 
