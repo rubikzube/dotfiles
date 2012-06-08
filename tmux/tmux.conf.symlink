@@ -24,5 +24,5 @@ set-window-option -g window-status-current-fg black
 setw -g automatic-rename
 
 # Mouseon/Mouseoff
-bind m source-file ~/.tmux/mouse-on.conf
-bind M source-file ~/.tmux/mouse-off.conf
+bind m source-file ~/dotfiles/tmux/mouseon.conf
+bind M source-file ~/dotfiles/tmux/mouseoff.conf
