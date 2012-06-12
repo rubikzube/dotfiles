@@ -1,0 +1,43 @@
+/* See http://www.jshint.com/options/ for more details on configuration */
+{
+	"predef": [
+
+		// Jasmine
+		"jasmine",
+		"spyOn",
+		"it",
+		"console",
+		"describe",
+		"expect",
+		"beforeEach",
+		"waits",
+		"waitsFor",
+		"runs",
+
+		// Standard libraries
+		"Backbone",
+		"_",
+
+		// Shutterstock libraries
+		"Ss"
+	],
+
+	// Enforcing 
+	"curly": true,
+	"eqeqeq": true,
+	"immed": true,
+	"latedef": true,
+	"newcap": true,
+	"noarg": true,
+	"regexp": true,
+	"undef": true,
+
+	// Relaxing
+	"supernew": true,
+	"smarttabs": true,
+
+	// Environments
+	"node": true,
+	"jquery": true,
+	"browser": true
+}
