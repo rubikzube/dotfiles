@@ -57,7 +57,7 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
-" Wrapping 
+" Wrapping
 set nowrap
 set textwidth=80
 set formatoptions=qrn1
@@ -98,7 +98,7 @@ endfunction
 " File find
 nnoremap <leader>s :CtrlP<CR>
 
-" Syntastic 
+" Syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
@@ -106,6 +106,9 @@ nnoremap <leader>c :SyntasticCheck<CR>
 
 " Ack
 nnoremap <leader>a :Ack
+
+" Strip Whitespace
+nnoremap <leader>w :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Folding
 set foldmethod=indent
@@ -115,6 +118,9 @@ set foldlevel=1
 
 " Invisibles
 set list
-set listchars=tab:▸\ 
+set listchars=tab:▸\
 hi SpecialKey ctermfg=234
 hi NonText ctermfg=234
+
+" Line Numbers
+highlight LineNr term=bold cterm=NONE ctermfg=235 ctermbg=NONE gui=NONE guifg=235 guibg=NONE
