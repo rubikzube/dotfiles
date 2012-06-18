@@ -118,7 +118,7 @@ set foldlevel=1
 
 " Invisibles
 set list
-set listchars=tab:▸\
+set listchars=tab:▸\ 
 hi SpecialKey ctermfg=234
 hi NonText ctermfg=234
 
