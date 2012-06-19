@@ -45,4 +45,4 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 alias tmux="tmux -2u"
 
 # Alias csslint to work off a configuration file
-alias csslint="csslint --rules=\`tr -d '\n' < ~/.csslintrc\`"
+alias csslint="csslint --errors=\`tr -d '\n' < ~/.csslintrc\`"
