@@ -37,6 +37,8 @@ task :install_vim do
 		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
 		'git://github.com/msanders/snipmate.vim.git', # Snippets
 		'git://github.com/mileszs/ack.vim', # ACK in vim
+		'git://github.com/Lokaltog/vim-easymotion', # Movement Hints
+		'git://github.com/majutsushi/tagbar', # Alternate View
 		'git://github.com/lunaru/vim-twig.git', # Twig syntax
 		'git://github.com/juvenn/mustache.vim.git', # Mustache syntax
 		'git://github.com/digitaltoad/vim-jade.git', # Jade syntax
