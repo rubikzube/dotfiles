@@ -110,6 +110,9 @@ nnoremap <leader>a :Ack
 " Strip Whitespace
 nnoremap <leader>w :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+" Tagbar
+nnoremap <leader>o :TagbarToggle<CR>
+
 " Folding
 set foldmethod=indent
 set foldnestmax=10
