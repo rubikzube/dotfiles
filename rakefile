@@ -30,14 +30,12 @@ task :install_vim do
 	bundle_list = [
 		'git://github.com/scrooloose/nerdtree.git', # File folder
 		'git://github.com/scrooloose/syntastic.git', # Syntax checking
-		'git://github.com/tpope/vim-surround.git', # Code manipulation
 		'git://github.com/tpope/vim-fugitive.git', # Git integration
 		'git://github.com/millermedeiros/vim-statline.git', # Useful statusline
 		'git://github.com/kien/ctrlp.vim.git', # Finding files
 		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
 		'git://github.com/msanders/snipmate.vim.git', # Snippets
 		'git://github.com/mileszs/ack.vim', # ACK in vim
-		'git://github.com/Lokaltog/vim-easymotion', # Movement Hints
 		'git://github.com/majutsushi/tagbar', # Alternate View
 		'git://github.com/lunaru/vim-twig.git', # Twig syntax
 		'git://github.com/juvenn/mustache.vim.git', # Mustache syntax
