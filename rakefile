@@ -35,6 +35,7 @@ task :install_vim do
 		'git://github.com/kien/ctrlp.vim.git', # Finding files
 		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
 		'git://github.com/msanders/snipmate.vim.git', # Snippets
+		'git://github.com/edsono/vim-matchit.git', # Clause jumping
 		'git://github.com/mileszs/ack.vim', # ACK in vim
 		'git://github.com/majutsushi/tagbar', # Alternate View
 		'git://github.com/lunaru/vim-twig.git', # Twig syntax
