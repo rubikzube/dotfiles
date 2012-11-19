@@ -17,14 +17,12 @@ task :install_vim do
 	current_dir = Dir.pwd
 
 	### Pathogen is the loader for VIM plugins
-	puts "Install Pathogen (y)?"
-	if STDIN.gets.chomp.downcase == 'y'
-		pathogen_url = 'https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim'
-		check_directory vim_dir
-		check_directory autoload_dir
-		check_directory bundle_dir
-		`curl -so #{autoload_dir}/pathogen.vim #{pathogen_url}`
-	end
+	puts "Installing Pathogen"
+	pathogen_url = 'https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim'
+	check_directory vim_dir
+	check_directory autoload_dir
+	check_directory bundle_dir
+	`curl -so #{autoload_dir}/pathogen.vim #{pathogen_url}`
 
 	### Install VIM plugins
 	bundle_list = [
@@ -37,6 +35,7 @@ task :install_vim do
 		'git://github.com/msanders/snipmate.vim.git', # Snippets
 		'git://github.com/edsono/vim-matchit.git', # Clause jumping
 		'git://github.com/mileszs/ack.vim', # ACK in vim
+		'git://github.com/tpope/vim-abolish.git', # Word manipulation
 		'git://github.com/majutsushi/tagbar', # Alternate View
 		'git://github.com/lunaru/vim-twig.git', # Twig syntax
 		'git://github.com/juvenn/mustache.vim.git', # Mustache syntax
@@ -51,18 +50,14 @@ task :install_vim do
 		bundle_name = bundle.split('/').last.sub(/\.git$/, '')
 		bundle_path = "#{bundle_dir}/#{bundle_name}"
 		if not File.directory?("#{bundle_path}")
-			puts "Install bundle #{bundle_name} (y)?"
-			if STDIN.gets.chomp.downcase == 'y'
-				Dir::mkdir("#{bundle_path}")
-				`git clone #{bundle} #{bundle_path}`
-			end
+			puts "Installing #{bundle_name}"
+			Dir::mkdir("#{bundle_path}")
+			`git clone #{bundle} #{bundle_path}`
 		else
-			puts "Update bundle #{bundle_name} (y)?"
-			if STDIN.gets.chomp.downcase == 'y'
-				Dir.chdir(bundle_path)
-				`git pull -v`
-				Dir.chdir(current_dir)
-			end
+			puts "Updating #{bundle_name}"
+			Dir.chdir(bundle_path)
+			`git pull -v`
+			Dir.chdir(current_dir)
 		end
 	}
 
@@ -77,12 +72,19 @@ task :install_vim do
 	check_directory color_dir
 	color_list.each { |color| 
 		color_name = color.split('/').last.sub(/\.git$/, '')
-		puts "Install color #{color_name} (y)?"
-		if STDIN.gets.chomp.downcase == 'y'
-			check_directory "#{color_dir}/#{color_name}"
-			`git clone #{color} #{color_dir}/#{color_name}`
-			`mv #{color_dir}/#{color_name}/colors/* #{color_dir}/`
+		color_path = "#{color_dir}/#{color_name}" 
+		if not File.directory?("#{color_path}")
+			check_directory "#{color_path}"
+			puts "Installing color #{color_name} (y)?"
+			`git clone #{color} #{color_path}`
+		else
+			puts "Updating #{color_name}"
+			Dir.chdir(color_path)
+			`git pull -v`
+			Dir.chdir(current_dir)
 		end
+		`rm -rf #{color_path}/colors/*`
+		`mv #{color_path}/colors/* #{color_dir}/`
 	}
 end
 
