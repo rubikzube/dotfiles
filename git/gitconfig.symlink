@@ -2,7 +2,7 @@
 	ui=auto
 [alias]
 	mmlog = log --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%cr) %C(bold blue)<%an>%Creset %s %C(yellow)%d%Creset ' --abbrev-commit --date=relative
-	mmlogg = log --pretty=format:'%Cred%h%Creset - %Cgreen(%cr) %C(bold blue)<%an>%Creset %s %Creset' --decorate --numstat
+	mmlogg = log --pretty=format:'%Cred%h%Creset - %Cgreen(%cr) %C(bold blue)<%an>%Creset %s %n%C(yellow)+       -       file%Creset' --decorate --numstat
 	mmbranch = branch -v --no-merged master
 [core]
 	filemode = true
