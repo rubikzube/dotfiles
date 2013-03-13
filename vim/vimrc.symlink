@@ -10,7 +10,6 @@ set nocompatible
 set modelines=0
 
 " Fonts + Colors
-set guifont=Monaco:h10
 set t_Co=256
 colorscheme molokai
 syntax enable
