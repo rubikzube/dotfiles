@@ -68,8 +68,8 @@ nnoremap ; :
 " Save on losing focus
 au FocusLost * :wa
 
-" Statusline
-set statusline+=%{fugitive#statusline()}
+" Status bar
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " Moving between windows
 nnoremap <leader><up> <C-W>j
