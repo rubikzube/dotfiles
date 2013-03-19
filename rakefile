@@ -34,7 +34,6 @@ task :install_vim do
 		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
 		'git://github.com/msanders/snipmate.vim.git', # Snippets
 		'git://github.com/mattn/zencoding-vim', # HTML/CSS Expander
-		'git://github.com/skammer/vim-css-color.git', # CSS colors
 		'git://github.com/edsono/vim-matchit.git', # Clause jumping
 		'git://github.com/mileszs/ack.vim', # ACK in vim
 		'git://github.com/tpope/vim-abolish.git', # Word manipulation
