@@ -33,7 +33,7 @@ task :install_vim do
 		'git://github.com/kien/ctrlp.vim.git', # Finding files
 		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
 		'git://github.com/msanders/snipmate.vim.git', # Snippets
-		'git://github.com/emmetio/emmet.git', # HTML/CSS Expander
+		'https://github.com/mattn/zencoding-vim', # HTML/CSS Expander
 		'git://github.com/edsono/vim-matchit.git', # Clause jumping
 		'git://github.com/mileszs/ack.vim', # ACK in vim
 		'git://github.com/tpope/vim-abolish.git', # Word manipulation
