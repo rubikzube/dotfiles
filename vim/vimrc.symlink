@@ -125,6 +125,11 @@ set foldlevelstart=0
 nnoremap <Space> za
 vnoremap <Space> za
 
+" Vertical splits and gutters
+set fcs+=vert:\ 
+hi VertSplit ctermbg=236
+hi SignColumn ctermbg=232
+
 " Invisibles
 set list
 set listchars=tab:▸\ 
