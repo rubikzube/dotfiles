@@ -5,7 +5,7 @@
 	mmlogg = log --pretty=format:'%Cred%h %Cgreen(%cr) %C(bold blue)<%an>%Creset %s %n%C(yellow)+       -       file%Creset' --decorate --numstat
 	mmbranch = branch -v --no-merged master
 	mmup = remote update --prune
-	mmclean = git checkout master; git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+	mmclean = checkout master; branch --merged | grep -v "\*" | xargs -n 1 branch -d
 [core]
 	filemode = true
 	bare = false
