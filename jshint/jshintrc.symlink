@@ -17,6 +17,7 @@
 		// Standard libraries
 		"Backbone",
 		"_",
+		"casper",
 
 		// Shutterstock libraries
 		"Ss"
