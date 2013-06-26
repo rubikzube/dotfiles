@@ -31,6 +31,7 @@ task :install_vim do
 		'git://github.com/airblade/vim-gitgutter.git', # Git gutter
 		'git://github.com/Lokaltog/powerline.git', # Useful statusline
 		'git://github.com/kien/ctrlp.vim.git', # Finding files
+		'git://github.com/tpope/vim-fugitive.git', # Better git blame
 		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
 		'git://github.com/marijnh/tern_for_vim.git', # JS intellisense 
 		'git://github.com/mattn/zencoding-vim', # HTML/CSS Expander
