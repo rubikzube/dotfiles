@@ -14,9 +14,6 @@
 	whitespace = trailing-space,space-before-tab,indent-with-non-tab
 	excludesfile = ~/dotfiles/git/.gitignore
 	editor = /usr/bin/vim
-[user]
-	name = Zubin Tiku
-	email = rubikzube@gmail.com
 [diff]
 	tool = vimdiff
 [difftool]
