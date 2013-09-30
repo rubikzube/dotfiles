@@ -46,3 +46,6 @@ alias tmux="tmux -2u"
 
 # Alias csslint to work off a configuration file
 alias csslint="csslint --errors=\`tr -d '\n' < ~/.csslintrc\`"
+
+# Alias find to highlight and use regular expressions
+alias find="find . | grep -v \".git/\" | egrep $1"
