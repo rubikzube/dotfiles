@@ -14,12 +14,6 @@ set t_Co=256
 colorscheme molokai
 syntax enable
 
-" Tabs
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set noexpandtab
-
 " Misc
 set encoding=utf-8
 set scrolloff=3
@@ -81,6 +75,23 @@ nnoremap <leader><right> <C-W>l
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 nnoremap <leader>f :NERDTreeToggle<CR>
+
+" Tab behavior
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set noexpandtab
+
+nnoremap <leader>t :call <SID>TabToggle()<CR>
+function! s:TabToggle()
+	if &expandtab
+		set noexpandtab
+		echo "Tabs set to tabs"
+	else
+		set expandtab
+		echo "Tabs set to spaces"
+	endif
+endfunction
 
 " Mouse Movements
 set mouse=a
