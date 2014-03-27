@@ -149,3 +149,6 @@ hi NonText ctermfg=233 ctermbg=233
 
 " Line Numbers
 highlight LineNr term=bold cterm=NONE ctermfg=235 ctermbg=NONE gui=NONE guifg=235 guibg=NONE
+
+" Set .json files to javascript syntax
+au BufNewFile,BufRead *.json setlocal ft=javascript
