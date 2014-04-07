@@ -150,5 +150,6 @@ hi NonText ctermfg=233 ctermbg=233
 " Line Numbers
 highlight LineNr term=bold cterm=NONE ctermfg=235 ctermbg=NONE gui=NONE guifg=235 guibg=NONE
 
-" Set .json files to javascript syntax
+" Set files to syntax
+au BufNewFile,BufRead *.swig setlocal ft=htmldjango
 au BufNewFile,BufRead *.json setlocal ft=javascript
