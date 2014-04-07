@@ -6,7 +6,7 @@ place altogether.
 ### Installation
 Instructions and Rake file started from https://github.com/craveytrain/dotfiles/
 
-+ Clone the repo
++ Clone the repo into your home directory
 + Enter the repo
 + Run rake
 
