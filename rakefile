@@ -72,6 +72,7 @@ task :install_vim do
 		'git://github.com/larssmit/vim-getafe.git'
 	]
 
+	`rm -rf #{color_path}/colors/*`
 	check_directory color_dir
 	color_list.each { |color|
 		color_name = color.split('/').last.sub(/\.git$/, '')
@@ -86,7 +87,6 @@ task :install_vim do
 			`git pull -v`
 			Dir.chdir(current_dir)
 		end
-		`rm -rf #{color_path}/colors/*`
 		`mv #{color_path}/colors/* #{color_dir}/`
 	}
 end
