@@ -107,7 +107,7 @@ function! s:MouseToggle()
 endfunction
 
 " File find
-nnoremap <leader>s :CtrlP<CR>
+nnoremap <leader>p :CtrlP<CR>
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* 
 let g:ctrlp_regexp = 1
 let g:ctrlp_max_height = 20
@@ -153,3 +153,5 @@ highlight LineNr term=bold cterm=NONE ctermfg=235 ctermbg=NONE gui=NONE guifg=23
 " Set files to syntax
 au BufNewFile,BufRead *.swig setlocal ft=htmldjango
 au BufNewFile,BufRead *.json setlocal ft=javascript
+au BufNewFile,BufRead *.pp setlocal ft=puppet
+au BufNewFile,BufRead *.md,*.mh setlocal ft=mason
