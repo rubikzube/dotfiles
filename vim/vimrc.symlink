@@ -143,7 +143,7 @@ hi SignColumn ctermbg=232
 
 " Invisibles
 set list
-set listchars=tab:▸\ 
+set listchars=trail:.,tab:▸\ 
 hi SpecialKey ctermfg=234
 hi NonText ctermfg=233 ctermbg=233
 
@@ -152,7 +152,7 @@ highlight LineNr term=bold cterm=NONE ctermfg=235 ctermbg=NONE gui=NONE guifg=23
 
 " Line Boundaries
 highlight ColorColumn ctermbg=233
-set colorcolumn=121,161,201,241,281
+set colorcolumn=121,161,201
 
 " Set files to syntax
 au BufNewFile,BufRead *.swig setlocal ft=htmldjango
