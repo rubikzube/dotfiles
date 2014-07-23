@@ -34,7 +34,7 @@ task :install_vim do
 		'git://github.com/tpope/vim-fugitive.git', # Better git blame
 		'git://github.com/tpope/vim-endwise.git', # Conditional autocomplete
 		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
-		'git://github.com/mattn/zencoding-vim', # HTML/CSS Expander
+		'git://github.com/mattn/emmet-vim.git', # HTML/CSS Expander
 		'git://github.com/edsono/vim-matchit.git', # Clause jumping
 		'git://github.com/mileszs/ack.vim', # ACK in vim
 		'git://github.com/vim-ruby/vim-ruby.git', # Ruby helpers
