@@ -18,7 +18,7 @@ task :install_vim do
 
 	### Pathogen is the loader for VIM plugins
 	puts "Installing Pathogen"
-	pathogen_url = 'https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim'
+	pathogen_url = 'https://raw.githubusercontent.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim'
 	check_directory vim_dir
 	check_directory autoload_dir
 	check_directory bundle_dir
