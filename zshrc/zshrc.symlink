@@ -46,3 +46,6 @@ alias tmux="tmux -2u"
 
 # Alias csslint to work off a configuration file
 alias csslint="csslint --errors=\`tr -d '\n' < ~/.csslintrc\`"
+
+# Set the ruby environment
+eval "$(rbenv init -)"
