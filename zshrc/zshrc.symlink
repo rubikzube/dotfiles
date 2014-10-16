@@ -49,3 +49,6 @@ alias csslint="csslint --errors=\`tr -d '\n' < ~/.csslintrc\`"
 
 # Set the ruby environment
 eval "$(rbenv init -)"
+
+# Add fasd support (https://github.com/clvv/fasd)
+eval "$(fasd --init auto)"
