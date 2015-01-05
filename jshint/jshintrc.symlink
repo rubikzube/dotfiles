@@ -2,13 +2,14 @@
 {
 	"predef": [
 
-		// Jasmine
+		// Jasmine/Mocha
 		"jasmine",
 		"spyOn",
 		"it",
 		"console",
 		"describe",
 		"expect",
+		"before",
 		"beforeEach",
 		"waits",
 		"waitsFor",
