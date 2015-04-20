@@ -20,3 +20,6 @@
 	prompt = false
 [push]
 	default = matching
+[user]
+	name = Zubin Tiku
+	email = rubikzube@gmail.com
