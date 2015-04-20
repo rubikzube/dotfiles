@@ -6,8 +6,9 @@ brew install ack
 brew install fasd
 brew install ctags-exuberant
 
-brew cask install 'vagrant'
 brew cask install 'virtualbox'
+brew cask install 'vagrant'
+brew cask install 'vagrant-manager'
 brew cask install 'iterm2'
 brew cask install 'charles'
 
