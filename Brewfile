@@ -1,21 +1,22 @@
 #!/bin/sh
 
 # Tools
-brew install wget
 brew install ack
-brew install fasd
 brew install ctags-exuberant
+brew install fasd
+brew install wget
 
-brew cask install 'virtualbox'
+# Applications
+brew cask install 'charles'
+brew cask install 'iterm2'
+brew cask install 'skype'
 brew cask install 'vagrant'
 brew cask install 'vagrant-manager'
-brew cask install 'iterm2'
-brew cask install 'charles'
-brew cask install 'skype'
+brew cask install 'virtualbox'
 
 # Browsers
-brew cask install 'google-chrome'
 brew cask install 'firefox'
+brew cask install 'google-chrome'
 brew cask install 'opera'
 
 # Cleanup
