@@ -11,6 +11,7 @@ brew cask install 'vagrant'
 brew cask install 'vagrant-manager'
 brew cask install 'iterm2'
 brew cask install 'charles'
+brew cask install 'skype'
 
 # Browsers
 brew cask install 'google-chrome'
