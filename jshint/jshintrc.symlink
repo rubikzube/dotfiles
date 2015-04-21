@@ -1,46 +1,28 @@
 /* See http://www.jshint.com/options/ for more details on configuration */
 {
-	"predef": [
 
-		// Jasmine/Mocha
-		"jasmine",
-		"spyOn",
-		"it",
-		"console",
-		"describe",
-		"expect",
-		"before",
-		"beforeEach",
-		"waits",
-		"waitsFor",
-		"runs",
-
-		// Standard libraries
-		"Backbone",
-		"_",
-		"casper",
-
-		// Shutterstock libraries
-		"Ss"
-	],
-
-	// Enforcing 
+	// Enforcing
 	"curly": true,
 	"eqeqeq": true,
-	"immed": true,
-	"latedef": true,
-	"newcap": true,
+	"freeze": true,
+	"latedef": "nofunc",
+	"maxcomplexity": 12,
+	"maxdepth": 8,
+	"maxparams": 4,
+	"maxstatements": 48,
 	"noarg": true,
-	"regexp": true,
+	"nonbsp": true,
+	"singleGroups": true,
 	"undef": true,
-	"strict": false,
+	"unused": true,
 
 	// Relaxing
 	"supernew": true,
-	"smarttabs": true,
 
 	// Environments
 	"node": true,
 	"jquery": true,
-	"browser": true
+	"browser": true,
+	"mocha": true,
+	"jasmine": true
 }
