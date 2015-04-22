@@ -159,3 +159,6 @@ au BufNewFile,BufRead *.swig setlocal ft=htmldjango
 au BufNewFile,BufRead *.json setlocal ft=javascript
 au BufNewFile,BufRead *.pp setlocal ft=puppet
 au BufNewFile,BufRead *.mh setlocal ft=mason
+
+" Set syntastic checker
+let g:syntastic_javascript_checkers = ['eslint']
