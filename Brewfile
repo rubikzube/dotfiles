@@ -8,6 +8,7 @@ brew install wget
 
 # Applications
 brew cask install 'charles'
+brew cask install 'dropbox'
 brew cask install 'iterm2'
 brew cask install 'skype'
 brew cask install 'vagrant'
