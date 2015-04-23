@@ -9,7 +9,8 @@ place altogether.
 2. Install [homebrew cask](http://caskroom.io)
 3. Install [Ohmyzsh](http://ohmyz.sh)
 4. Run `./Brewfile`
-5. Run `Rake`
+5. Run `./Npmfile`
+6. Run `Rake`
 
 ## Futher Reading
 * [Steve Losh: Coming Home to VIM] (http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
