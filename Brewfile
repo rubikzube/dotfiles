@@ -7,6 +7,7 @@ brew install fasd
 brew install wget
 
 # Applications
+brew cask install 'android-studio'
 brew cask install 'charles'
 brew cask install 'dropbox'
 brew cask install 'fabric'
