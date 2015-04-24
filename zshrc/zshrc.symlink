@@ -33,7 +33,7 @@ source $ZSH/oh-my-zsh.sh
 ###########################################################
 
 # Add the path to homebrew's include
-export PATH=$PATH:/usr/local/include
+export PATH=/usr/local/include:$PATH
 
 # Colors for Man Pages (http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/)
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
