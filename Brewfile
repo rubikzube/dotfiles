@@ -2,8 +2,13 @@
 
 # Tools
 brew install ack
+brew install android-ndk
+brew install android-sdk
 brew install ctags-exuberant
+brew install curl
 brew install fasd
+brew install ruby
+brew install v8
 brew install wget
 
 # Applications
