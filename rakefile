@@ -26,30 +26,37 @@ task :install_vim do
 
 	### Install VIM plugins
 	bundle_list = [
-		'git://github.com/scrooloose/nerdtree.git', # File folder
-		'git://github.com/scrooloose/syntastic.git', # Syntax checking
-		'git://github.com/airblade/vim-gitgutter.git', # Git gutter
-		'git://github.com/tpope/vim-fugitive.git', # Better git blame
+
+		# Features
 		'git://github.com/Lokaltog/powerline.git', # Useful statusline
-		'git://github.com/kien/ctrlp.vim.git', # Finding files
-		'git://github.com/tpope/vim-endwise.git', # Conditional autocomplete
-		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
-		'git://github.com/mattn/emmet-vim.git', # HTML/CSS Expander
+		'git://github.com/airblade/vim-gitgutter.git', # Git gutter
 		'git://github.com/edsono/vim-matchit.git', # Clause jumping
-		'git://github.com/mileszs/ack.vim', # ACK in vim
-		'git://github.com/vim-ruby/vim-ruby.git', # Ruby helpers
-		'git://github.com/tpope/vim-repeat.git', # Plugin repeater
-		'git://github.com/tpope/vim-surround.git', # Word delimiter manipulation
-		'git://github.com/tpope/vim-abolish.git', # Word manipulation
+		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
+		'git://github.com/kien/ctrlp.vim.git', # Finding files
 		'git://github.com/majutsushi/tagbar', # Outline view
-		'git://github.com/lunaru/vim-twig.git', # Twig syntax
-		'git://github.com/juvenn/mustache.vim.git', # Mustache syntax
-		'git://github.com/digitaltoad/vim-jade.git', # Jade syntax
-		'git://github.com/kchmck/vim-coffee-script.git', # Coffeescript syntax
-		'git://github.com/tpope/vim-markdown.git', # Markdown syntax
-		'git://github.com/groenewege/vim-less.git', # LESS syntax
-		'git://github.com/rodjek/vim-puppet.git', # Puppet syntax
-		'git://github.com/editorconfig/editorconfig' # Whitespace configuration
+		'git://github.com/mileszs/ack.vim', # ACK in vim
+		'git://github.com/scrooloose/nerdtree.git', # File folder
+		'git://github.com/tpope/vim-endwise.git', # Conditional autocomplete
+		'git://github.com/tpope/vim-fugitive.git', # Better git blame
+		'git://github.com/tpope/vim-repeat.git', # Improved Repeater
+
+		# Text manipulation
+		'git://github.com/editorconfig/editorconfig', # Whitespace configuration
+		'git://github.com/mattn/emmet-vim.git', # HTML/CSS Expander
+		'git://github.com/tpope/vim-abolish.git', # Word manipulation
+		'git://github.com/tpope/vim-surround.git', # Word delimiter manipulation
+		'git://github.com/vim-ruby/vim-ruby.git', # Ruby helpers
+
+		# Syntax helpers
+		'git://github.com/digitaltoad/vim-jade.git', # Jade
+		'git://github.com/elzr/vim-json.git', # JSON
+		'git://github.com/groenewege/vim-less.git', # LESS
+		'git://github.com/juvenn/mustache.vim.git', # Mustache
+		'git://github.com/kchmck/vim-coffee-script.git', # Coffeescript
+		'git://github.com/lunaru/vim-twig.git', # Twig
+		'git://github.com/rodjek/vim-puppet.git', # Puppet
+		'git://github.com/scrooloose/syntastic.git', # Syntax checking
+		'git://github.com/tpope/vim-markdown.git' # Markdown
 	]
 
 	bundle_list.each { |bundle|
