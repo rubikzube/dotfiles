@@ -8,6 +8,7 @@ brew install ctags-exuberant
 brew install curl
 brew install fasd
 brew install ruby
+brew install the_silver_searcher
 brew install v8
 brew install wget
 
@@ -29,5 +30,9 @@ brew cask install 'google-chrome'
 brew cask install 'opera'
 
 # Cleanup
+brew cleanup
 brew cask cleanup
+
+# List
+brew list
 brew cask list

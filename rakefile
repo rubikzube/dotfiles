@@ -35,6 +35,7 @@ task :install_vim do
 		'git://github.com/kien/ctrlp.vim.git', # Finding files
 		'git://github.com/majutsushi/tagbar', # Outline view
 		'git://github.com/mileszs/ack.vim', # ACK in vim
+		'git://github.com/epmatsw/ag.vim', # Ag in vim
 		'git://github.com/scrooloose/nerdtree.git', # File folder
 		'git://github.com/tpope/vim-endwise.git', # Conditional autocomplete
 		'git://github.com/tpope/vim-fugitive.git', # Better git blame

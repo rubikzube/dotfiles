@@ -119,7 +119,7 @@ let g:syntastic_auto_loc_list=1
 nnoremap <leader>c :SyntasticCheck<CR>
 
 " Ack
-nnoremap <leader>a :Ack
+nnoremap <leader>a :Ag! 
 
 " Strip Whitespace
 nnoremap <leader>w :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
