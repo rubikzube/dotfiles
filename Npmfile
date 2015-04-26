@@ -1,12 +1,13 @@
 #!/bin/sh
 
+# Vim necessities
 sudo npm install -d babel-eslint
 sudo npm install -g csslint
 sudo npm install -g eslint
-sudo npm install -g forever
-sudo npm install -g istanbul
+sudo npm install -g js-beautify
 sudo npm install -g jscs
 sudo npm install -g jshint
 sudo npm install -g jsonlint
-sudo npm install -g n
-sudo npm install -g yo
+
+# List
+npm list -g --depth=0

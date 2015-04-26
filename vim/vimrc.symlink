@@ -163,3 +163,8 @@ nnoremap <leader>w :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Outline view
 nnoremap <leader>o :TagbarToggle<CR>
+
+" Beautify
+let g:formatprg_javascript = "jscs"
+let g:formatprg_args_javascript = "-x"
+nnoremap <leader>b :Autoformat<CR><CR>
