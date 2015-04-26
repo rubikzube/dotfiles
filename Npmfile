@@ -7,5 +7,6 @@ sudo npm install -g forever
 sudo npm install -g istanbul
 sudo npm install -g jscs
 sudo npm install -g jshint
+sudo npm install -g jsonlint
 sudo npm install -g n
 sudo npm install -g yo

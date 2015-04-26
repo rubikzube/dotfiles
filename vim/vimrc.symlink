@@ -156,6 +156,7 @@ set colorcolumn=121,161,201
 
 " Set files to syntax
 au BufNewFile,BufRead *.swig setlocal ft=htmldjango
+au BufNewFile,BufRead *.json setlocal ft=json
 au BufNewFile,BufRead *.pp setlocal ft=puppet
 au BufNewFile,BufRead *.mh setlocal ft=mason
 
