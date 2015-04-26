@@ -35,48 +35,6 @@ set relativenumber
 set directory=/tmp
 set undodir=/tmp
 
-" Leader
-let mapleader = ","
-
-" Search
-nnoremap / /\v
-vnoremap / /\v
-set ignorecase
-set smartcase
-set gdefault
-set incsearch
-set showmatch
-set hlsearch
-nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
-
-" Wrapping
-set nowrap
-set textwidth=80
-set formatoptions=qrn1
-
-" Remap so that ; performs the same thing as :
-nnoremap ; :
-
-" Save on losing focus
-au FocusLost * :wa
-
-" Status bar
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-
-" Moving between windows
-nnoremap <leader><up> <C-W>j
-nnoremap <leader><down> <C-W>k
-nnoremap <leader><left> <C-W>h
-nnoremap <leader><right> <C-W>l
-
-" Tab behavior
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set noexpandtab
-
 " Vertical splits and gutters
 set fcs+=vert:\ 
 hi VertSplit ctermbg=232
@@ -104,14 +62,56 @@ set foldlevelstart=0
 nnoremap <Space> za
 vnoremap <Space> za
 
+" Wrapping
+set nowrap
+set textwidth=80
+set formatoptions=qrn1
+
+" Tab behavior
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set noexpandtab
+
+" Save on losing focus
+au FocusLost * :wa
+
 " Set files to syntax
 au BufNewFile,BufRead *.swig setlocal ft=htmldjango
 au BufNewFile,BufRead *.json setlocal ft=json
 au BufNewFile,BufRead *.pp setlocal ft=puppet
 au BufNewFile,BufRead *.mh setlocal ft=mason
 
-" Set syntastic checker
+" Remap so that ; performs the same thing as :
+nnoremap ; :
+
+" Leader
+let mapleader = ","
+
+" Set syntastic checkers
 let g:syntastic_javascript_checkers = ['eslint']
+
+" Search
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+" Status bar
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+" Moving between splits
+nnoremap <leader><up> <C-W>j
+nnoremap <leader><down> <C-W>k
+nnoremap <leader><left> <C-W>h
+nnoremap <leader><right> <C-W>l
 
 " NerdTREE
 autocmd vimenter * if !argc() | NERDTree | endif
