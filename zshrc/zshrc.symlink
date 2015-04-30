@@ -34,6 +34,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Add the path to homebrew's include
 export PATH=/usr/local/include:$PATH
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_NDK=/usr/local/Cellar/android-ndk/r10d
 
 # Colors for Man Pages (http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/)
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
