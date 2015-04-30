@@ -32,10 +32,12 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 ###########################################################
 
-# Add the path to homebrew's include
-export PATH=/usr/local/include:$PATH
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export ANDROID_NDK=/usr/local/Cellar/android-ndk/r10d
+# Add Android Settings
+export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r10d
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk
+
+# Add the path to android and homebrew's include
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:/usr/local/include:$PATH
 
 # Colors for Man Pages (http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/)
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking

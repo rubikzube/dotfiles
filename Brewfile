@@ -13,9 +13,9 @@ brew install v8
 brew install wget
 
 # Applications
+brew cask install 'android-studio'
 brew cask install 'charles'
 brew cask install 'dropbox'
-brew cask install 'eclipse-ide'
 brew cask install 'fabric'
 brew cask install 'iterm2'
 brew cask install 'java'
