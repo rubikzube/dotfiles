@@ -15,7 +15,7 @@ brew install wget
 
 # Applications
 brew cask install 'android-studio'
-brew cask install 'charles'
+# brew cask install 'charles' - required version 3.9.3
 brew cask install 'dropbox'
 brew cask install 'fabric'
 brew cask install 'iterm2'
