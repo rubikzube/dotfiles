@@ -6,6 +6,7 @@ brew install android-ndk
 brew install android-sdk
 brew install ctags-exuberant
 brew install curl
+brew install gradle
 brew install fasd
 brew install ruby
 brew install the_silver_searcher
