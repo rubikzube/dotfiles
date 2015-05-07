@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Taps
+brew tap homebrew/services
+
 # Tools
 brew install ack
 brew install android-ndk
@@ -8,6 +11,7 @@ brew install ctags-exuberant
 brew install curl
 brew install gradle
 brew install fasd
+brew install memcached
 brew install ruby
 brew install the_silver_searcher
 brew install v8
