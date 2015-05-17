@@ -1,4 +1,6 @@
-/coverage/
 /build/
-/node_modules/
+/compiled_views/
+/coverage/
 /dist/
+/gen/
+/node_modules/
