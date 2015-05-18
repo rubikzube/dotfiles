@@ -4,6 +4,7 @@
 sudo npm install -d babel-eslint
 sudo npm install -g csslint
 sudo npm install -g eslint
+sudo npm install -g eslint-plugin-react
 sudo npm install -g js-beautify
 sudo npm install -g jscs
 sudo npm install -g jshint
