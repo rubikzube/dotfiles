@@ -52,6 +52,7 @@ task :install_vim do
 		# Syntax helpers
 		'git://github.com/digitaltoad/vim-jade.git', # Jade
 		'git://github.com/elzr/vim-json.git', # JSON
+		'git://github.com/mxw/vim-jsx.git', #JSX
 		'git://github.com/groenewege/vim-less.git', # LESS
 		'git://github.com/juvenn/mustache.vim.git', # Mustache
 		'git://github.com/kchmck/vim-coffee-script.git', # Coffeescript
