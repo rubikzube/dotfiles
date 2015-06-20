@@ -7,10 +7,13 @@ brew tap homebrew/services
 brew install ack
 brew install android-ndk
 brew install android-sdk
+brew install chromedriver
 brew install ctags-exuberant
 brew install curl
+brew install gettext
 brew install gradle
 brew install fasd
+brew install imagemagick
 brew install memcached
 brew install ruby
 brew install the_silver_searcher
