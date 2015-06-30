@@ -14,6 +14,7 @@ brew install gettext
 brew install gradle
 brew install fasd
 brew install imagemagick
+brew install maven
 brew install memcached
 brew install ruby
 brew install the_silver_searcher
