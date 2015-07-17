@@ -61,3 +61,17 @@ eval "$(fasd --init auto)"
 # Increase the ulimit
 ulimit -n 1024
 ulimit -u 1024
+
+# Delete old branches that have already been merged to master
+function gitrclean {
+	for b in `git branch -r --merged master | egrep '(feature|bugfix)'`; do
+		remote=$(echo $b | cut -d '/' -f 1)
+		flow=$(echo $b | cut -d '/' -f 2)
+		branch=$(echo $b | cut -d '/' -f 3)
+		gitcmd="git push $remote :$flow/$branch"
+		echo "Run this? '$gitcmd' Procced?(y/n) "; read answer
+		if [[ "$answer" == "y" ]]; then
+			sh -c $gitcmd
+		fi
+	done
+}
