@@ -63,7 +63,7 @@ ulimit -n 1024
 ulimit -u 1024
 
 # Delete old branches that have already been merged to master
-function gitrclean {
+function gitclean {
 	for b in `git branch -r --merged master | egrep '(feature|bugfix)'`; do
 		remote=$(echo $b | cut -d '/' -f 1)
 		flow=$(echo $b | cut -d '/' -f 2)
