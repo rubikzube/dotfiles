@@ -4,6 +4,7 @@
 sudo npm install -g babel-eslint
 sudo npm install -g bower
 sudo npm install -g csslint
+sudo npm install -g npm-check
 sudo npm install -g eslint
 sudo npm install -g eslint-plugin-react
 sudo npm install -g js-beautify
