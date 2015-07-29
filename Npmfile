@@ -5,10 +5,10 @@ sudo npm install -g babel-eslint
 sudo npm install -g bower
 sudo npm install -g csslint
 sudo npm install -g npm-check
-sudo npm install -g eslint
-sudo npm install -g eslint-plugin-react
+sudo npm install -g eslint@0.20.0
+sudo npm install -g eslint-plugin-react@2.7.1
 sudo npm install -g js-beautify
-sudo npm install -g jscs
+sudo npm install -g jscs@1.13.1
 sudo npm install -g jshint
 sudo npm install -g jsonlint
 

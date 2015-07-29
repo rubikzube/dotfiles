@@ -168,3 +168,6 @@ nnoremap <leader>o :TagbarToggle<CR>
 let g:formatprg_javascript = "jscs"
 let g:formatprg_args_javascript = "-x"
 nnoremap <leader>b :Autoformat<CR><CR>
+
+" Beautify JSON
+nnoremap <leader>json :%!python -m json.tool<CR><CR>
