@@ -20,6 +20,7 @@ brew install ruby
 brew install the_silver_searcher
 brew install v8
 brew install wget
+brew install wrk
 
 # Applications
 brew cask install 'android-studio'
