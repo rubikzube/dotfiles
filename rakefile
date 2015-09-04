@@ -32,7 +32,7 @@ task :install_vim do
 		'git://github.com/airblade/vim-gitgutter.git', # Git gutter
 		'git://github.com/edsono/vim-matchit.git', # Clause jumping
 		'git://github.com/epmatsw/ag.vim', # Ag in vim
-		'git://github.com/ervandew/supertab.git', # Tab based autocomplete
+		'git://github.com/Shougo/neocomplete.vim', # Tab based autocomplete
 		'git://github.com/kien/ctrlp.vim.git', # Finding files
 		'git://github.com/majutsushi/tagbar', # Outline view
 		'git://github.com/mileszs/ack.vim', # ACK in vim
