@@ -30,6 +30,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
+set nu
 
 " Move the swap and undo files out of the way
 set directory=/tmp
