@@ -19,7 +19,7 @@ brew install memcached
 brew install ruby
 brew install the_silver_searcher
 brew install v8
-brew install vim
+brew install vim --with-lua
 brew install wget
 brew install wrk
 
