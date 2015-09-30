@@ -11,7 +11,9 @@ sudo npm install -g jscs@1.13.1
 sudo npm install -g jshint
 sudo npm install -g jsonlint
 sudo npm install -g jsonlint
+sudo npm install -g node-inspector
 sudo npm install -g npm-check
+sudo npm install -g v8-profiler
 
 # List
 npm list -g --depth=0
