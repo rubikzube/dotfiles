@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Vim necessities
+sudo npm install -g appium
 sudo npm install -g babel-eslint
 sudo npm install -g csslint
 sudo npm install -g eslint-plugin-react@2.7.1
