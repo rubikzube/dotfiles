@@ -10,6 +10,7 @@ brew install chromedriver
 brew install ctags-exuberant
 brew install curl
 brew install gettext
+brew install giter8
 brew install gradle
 brew install fasd
 brew install imagemagick
