@@ -11,6 +11,8 @@ place altogether.
 4. Run `./Brewfile`
 5. Run `./Npmfile`
 6. Run `Rake`
+7. Install [conscript](hgiot ttps://github.com/n8han/conscript)
+
 
 ## Futher Reading
 * [Steve Losh: Coming Home to VIM] (http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
