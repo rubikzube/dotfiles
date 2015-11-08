@@ -1,6 +1,0 @@
---ignore-dir=is:build
---ignore-dir=is:compiled_views
---ignore-dir=is:coverage
---ignore-dir=is:dist
---ignore-dir=is:gen
---ignore-dir=is:node_modules

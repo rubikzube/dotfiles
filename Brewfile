@@ -4,7 +4,6 @@
 brew tap homebrew/services
 
 # Tools
-brew install ack
 brew install android-ndk
 brew install android-sdk
 brew install chromedriver
@@ -17,6 +16,7 @@ brew install imagemagick
 brew install maven
 brew install memcached
 brew install ruby
+brew install sbt
 brew install the_silver_searcher
 brew install v8
 brew install vim --with-lua
@@ -29,6 +29,7 @@ brew cask install 'dropbox'
 brew cask install 'fabric'
 brew cask install 'flux'
 brew cask install 'iterm2'
+brew cask install 'intellij-idea-ce'
 brew cask install 'java'
 brew cask install 'skype'
 brew cask install 'vagrant'
