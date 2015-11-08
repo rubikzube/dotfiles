@@ -9,7 +9,6 @@ sudo npm install -g js-beautify
 sudo npm install -g jscs@1.13.1
 sudo npm install -g jshint
 sudo npm install -g jsonlint
-sudo npm install -g jsonlint
 sudo npm install -g n
 sudo npm install -g node-inspector
 sudo npm install -g npm-check
