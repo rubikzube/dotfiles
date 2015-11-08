@@ -35,10 +35,14 @@ source $ZSH/oh-my-zsh.sh
 # Add Android Settings
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.1.2
 export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r10d
+export ANDROID_TOOLS=$ANDROID_HOME/tools
+export ANDROID_PLATFORM=$ANDROID_HOME/platform-tools
+export BREW_INSTALL=/usr/local/include
+export USER_INSTALL_BIN=/Users/$USER/bin
 export GETTEXT=/usr/local/opt/gettext/bin
 
 # Add the path to android and homebrew's include
-export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:/usr/local/include:$PATH:$GETTEXT
+export PATH=$ANDROID_TOOLS:$ANDROID_PLATFORM:$ANDROID_NDK_HOME:$BREW_INSTALL:$USER_INSTALL_BIN:$PATH:$GETTEXT
 
 # Colors for Man Pages (http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/)
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
