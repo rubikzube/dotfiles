@@ -13,11 +13,13 @@ brew install gettext
 brew install giter8
 brew install gradle
 brew install fasd
+brew install hadoop
 brew install imagemagick
 brew install maven
 brew install memcached
 brew install ruby
 brew install sbt
+brew install scala
 brew install the_silver_searcher
 brew install v8
 brew install vim --with-lua
