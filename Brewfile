@@ -14,6 +14,7 @@ brew install giter8
 brew install gradle
 brew install fasd
 brew install hadoop
+brew install httpie
 brew install imagemagick
 brew install maven
 brew install memcached
