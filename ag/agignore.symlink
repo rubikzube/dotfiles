@@ -4,3 +4,5 @@
 /dist/
 /gen/
 /node_modules/
+/app/resources/i18n/
+/app/resources/locale/
