@@ -39,6 +39,7 @@ brew cask install 'skype'
 brew cask install 'utorrent'
 brew cask install 'vagrant'
 brew cask install 'vagrant-manager'
+brew cask install 'vlc'
 brew cask install 'virtualbox'
 
 # Browsers
