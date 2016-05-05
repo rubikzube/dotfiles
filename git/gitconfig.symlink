@@ -7,6 +7,9 @@
 	mmup = remote update --prune
 	mmclean = checkout master; branch --merged | grep -v "\*" | xargs -n 1 branch -d
 	mmstatus = !sh -c 'git mmup && git status && git branch'
+	co = checkout
+	df = diff
+	dt = difftool
 [core]
 	filemode = true
 	bare = false
