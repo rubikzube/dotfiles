@@ -3,8 +3,11 @@
 # Vim necessities
 sudo npm install -g babel-eslint
 sudo npm install -g csslint
-sudo npm install -g eslint-plugin-react
 sudo npm install -g eslint
+sudo npm install -g eslint-config-airbnb
+sudo npm install -g eslint-plugin-import
+sudo npm install -g eslint-plugin-jsx-a11y
+sudo npm install -g eslint-plugin-react
 sudo npm install -g js-beautify
 sudo npm install -g jshint
 sudo npm install -g jsonlint
