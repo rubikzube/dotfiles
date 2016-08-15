@@ -35,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 # Add Android Settings
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1_1
 export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk
-export BREW_INSTALL=/usr/local/include
+export BREW_INSTALL=/usr/local/Cellar
 export USER_INSTALL_BIN=/Users/$USER/bin
 export GETTEXT=/usr/local/opt/gettext/bin
 
