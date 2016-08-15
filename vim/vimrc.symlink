@@ -48,7 +48,7 @@ hi SpecialKey ctermfg=234
 hi NonText ctermfg=233 ctermbg=233
 
 " Line Numbers
-highlight LineNr term=bold cterm=NONE ctermfg=235 ctermbg=NONE gui=NONE guifg=235 guibg=NONE
+highlight LineNr term=bold cterm=NONE ctermfg=235 ctermbg=NONE gui=NONE guibg=NONE
 
 " Line Boundaries
 highlight ColorColumn ctermbg=233

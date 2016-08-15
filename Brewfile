@@ -27,6 +27,7 @@ brew install wrk
 # Applications
 brew cask install 'android-studio'
 brew cask install 'dropbox'
+brew cask install 'cyberduck'
 brew cask install 'flux'
 brew cask install 'iterm2'
 brew cask install 'java'
