@@ -36,11 +36,12 @@ task :install_vim do
 		'git://github.com/kien/ctrlp.vim.git', # Finding files
 		'git://github.com/majutsushi/tagbar', # Outline view
 		'git://github.com/mileszs/ack.vim', # ACK in vim
-    'git://github.com/scrooloose/nerdtree.git', # File folder
-    'git://github.com/tpope/vim-commentary.git', # Comments
-    'git://github.com/tpope/vim-endwise.git', # Conditional autocomplete
+		'git://github.com/scrooloose/nerdtree.git', # File folder
+		'git://github.com/tpope/vim-commentary.git', # Comments
+		'git://github.com/tpope/vim-endwise.git', # Conditional autocomplete
 		'git://github.com/tpope/vim-fugitive.git', # Better git blame
 		'git://github.com/tpope/vim-repeat.git', # Improved Repeater
+		'git://github.com/MattesGroeger/vim-bookmarks.git', # Bookmarks
 
 		# Text manipulation
 		'git://github.com/Chiel92/vim-autoformat', # Autoformat
