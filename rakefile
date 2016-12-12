@@ -50,6 +50,7 @@ task :install_vim do
 		'git://github.com/tpope/vim-abolish.git', # Word manipulation
 		'git://github.com/tpope/vim-surround.git', # Word delimiter manipulation
 		'git://github.com/vim-ruby/vim-ruby.git', # Ruby helpers
+		'git://github.com/mvolkmann/vim-js-arrow-function', # JS fat arrow
 
 		# Syntax helpers
 		'git://github.com/derekwyatt/vim-scala', # Scala
