@@ -4,5 +4,6 @@
 /dist/
 /gen/
 /node_modules/
+/app/assets/javascripts/vendor/
 /app/resources/i18n/
 /app/resources/locale/
