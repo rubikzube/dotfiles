@@ -14,6 +14,8 @@ sudo npm install -g jsonlint
 sudo npm install -g n
 sudo npm install -g node-inspector
 sudo npm install -g npm-check
+sudo npm install -g react-native-cli
+sudo npm install -g reactotron-cli
 
 # List
 npm list -g --depth=0
