@@ -26,6 +26,7 @@ brew install wget
 brew install wrk
 
 # Applications
+brew cask install 'atom'
 brew cask install 'android-studio'
 brew cask install 'dropbox'
 brew cask install 'cyberduck'
