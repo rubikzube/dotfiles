@@ -10,9 +10,9 @@ place altogether.
 3. Install [Ohmyzsh](http://ohmyz.sh)
 4. Run `./Brewfile`
 5. Run `./Npmfile`
-6. Run `Rake`
-7. Install [conscript](hgiot ttps://github.com/n8han/conscript)
-
+6. Run `./Gemfile`
+7. Run `./Atomfile`
+8. Run `rake`
 
 ## Futher Reading
 * [Steve Losh: Coming Home to VIM] (http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
