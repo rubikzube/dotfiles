@@ -1,3 +1,3 @@
 #!/bin/sh
 
-gem install scss-lint
+gem install scss_lint

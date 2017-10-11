@@ -10,7 +10,6 @@ sudo npm install -g eslint-plugin-react
 sudo npm install -g eslint-config-airbnb
 sudo npm install -g js-beautify
 sudo npm install -g jsonlint
-sudo npm install -g n
 sudo npm install -g node-inspector
 sudo npm install -g npm-check
 

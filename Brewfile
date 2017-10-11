@@ -11,6 +11,7 @@ brew install git-flow
 brew install go
 brew install fasd
 brew install httpie
+brew install node
 brew install memcached
 brew install ruby
 brew install the_silver_searcher
