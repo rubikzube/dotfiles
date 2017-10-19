@@ -3,10 +3,9 @@
 # Assumes node > 8.7.0
 
 # Vim necessities
+sudo npm install -g babel-eslint@8.0.1
 sudo npm install -g csslint@^1.0.5
 sudo npm install -g eslint@^4.9.0
-sudo npm install -g eslint-config-airbnb-base@^12.1.0
-sudo npm install -g eslint-plugin-import@^2.7.0
 sudo npm install -g js-beautify@^1.7.4
 sudo npm install -g jsonlint@^1.6.2
 sudo npm install -g node-inspector@^1.1.1
