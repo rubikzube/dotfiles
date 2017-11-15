@@ -6,10 +6,10 @@ brew tap homebrew/services
 # Tools
 brew install ctags-exuberant
 brew install curl
+brew install fasd
 brew install gettext
 brew install git-flow
 brew install go
-brew install fasd
 brew install httpie
 brew install memcached
 brew install ruby

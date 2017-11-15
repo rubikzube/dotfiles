@@ -32,6 +32,20 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 ###########################################################
 
+# Android (https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03)
+export ANT_HOME=/usr/local/opt/ant
+export MAVEN_HOME=/usr/local/opt/maven
+export GRADLE_HOME=/usr/local/opt/gradle
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
+
+export PATH=$ANT_HOME/bin:$PATH
+export PATH=$MAVEN_HOME/bin:$PATH
+export PATH=$GRADLE_HOME/bin:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/build-tools/19.1.0:$PATH
+
 # Colors for Man Pages (http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/)
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
 export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold

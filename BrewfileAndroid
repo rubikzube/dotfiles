@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Android Tools
+brew install ant
+brew install gradle
+brew install maven
+
+# Android Tools
+brew cask install 'android-sdk'
+brew cask install 'android-ndk'
+brew cask install 'android-studio'
+brew cask install 'intel-haxm'
+
+# Cleanup
+brew cleanup
+brew cask cleanup
+
+# List
+echo "==> Installed Brews"
+brew list
+echo "==> Installed Casks"
+brew cask list
+
+# Update the sdk
+sdkmanager --update
