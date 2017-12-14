@@ -4,14 +4,24 @@
 brew tap homebrew/services
 
 # Tools
+brew install bcrypt
 brew install ctags-exuberant
 brew install curl
 brew install fasd
+brew install gcc
 brew install gettext
 brew install git-flow
 brew install go
+brew install graphviz
 brew install httpie
+brew install libxml2 --with-python
+brew install openssl
 brew install memcached
+brew install mysql
+brew install pkg-config
+brew install python
+brew install redis
+brew install rocksdb
 brew install ruby
 brew install the_silver_searcher
 brew install unar

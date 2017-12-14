@@ -42,6 +42,8 @@ task :install_vim do
 		'git://github.com/tpope/vim-fugitive.git', # Better git blame
 		'git://github.com/tpope/vim-repeat.git', # Improved Repeater
 		'git://github.com/MattesGroeger/vim-bookmarks.git', # Bookmarks
+		'git://github.com/Shougo/vimproc.vim.git', # Asynchronous execution library
+		'https://github.com/Quramy/tsuquyomi.git', # Typescript tooling
 
 		# Text manipulation
 		'git://github.com/Chiel92/vim-autoformat', # Autoformat
@@ -59,6 +61,8 @@ task :install_vim do
 		'git://github.com/groenewege/vim-less.git', # LESS
 		'git://github.com/juvenn/mustache.vim.git', # Mustache
 		'git://github.com/kchmck/vim-coffee-script.git', # Coffeescript
+		'git://github.com/leafgarland/typescript-vim', #Typescript
+		'git://github.com/Quramy/vim-js-pretty-template.git', # JavaSrcipt Template Strings
 		'git://github.com/lunaru/vim-twig.git', # Twig
 		'git://github.com/rodjek/vim-puppet.git', # Puppet
 		'git://github.com/scrooloose/syntastic.git', # Syntax checking
