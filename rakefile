@@ -54,6 +54,7 @@ task :install_vim do
 		'git://github.com/vim-ruby/vim-ruby.git', # Ruby helpers
 
 		# Syntax helpers
+		'git://github.com/mtscout6/syntastic-local-eslint.vim.git', # local eslint
 		'git://github.com/derekwyatt/vim-scala', # Scala
 		'git://github.com/digitaltoad/vim-jade.git', # Jade
 		'git://github.com/elzr/vim-json.git', # JSON

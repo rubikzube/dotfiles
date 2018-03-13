@@ -98,9 +98,6 @@ nnoremap ; :
 " Leader
 let mapleader = ","
 
-" Set syntastic checkers
-let g:syntastic_javascript_checkers = ['eslint']
-
 " Search
 nnoremap / /\v
 vnoremap / /\v
@@ -111,8 +108,6 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-" nnoremap <tab> %
-" vnoremap <tab> %
 
 " Status bar
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
@@ -160,13 +155,29 @@ let g:ctrlp_regexp = 1
 let g:ctrlp_max_height = 20
 
 " Syntastic
-let g:syntastic_enable_signs=1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_jump=0
-let g:syntastic_auto_loc_list=1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_enable_signs=1
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_loc_list_height = 5
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_style_warning_symbol = '💩'
+let g:syntastic_warning_symbol = '⚠️'
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
 nnoremap <leader>c :SyntasticCheck<CR>
 
 " Ag in Vim
-nnoremap <leader>a :Ag! 
+nnoremap <leader>a :Ag!
 
 " Strip Whitespace
 nnoremap <leader>w :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
