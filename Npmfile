@@ -12,6 +12,7 @@ sudo npm install -g jsonlint@^1.6.2
 sudo npm install -g node-inspector@^1.1.1
 sudo npm install -g npm-check@^5.4.5
 sudo npm install -g typescript
+sudo npm install -g yo
 
 # List
 npm list -g --depth=0
