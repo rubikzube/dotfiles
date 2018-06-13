@@ -36,15 +36,10 @@ source $ZSH/oh-my-zsh.sh
 export ANT_HOME=/usr/local/opt/ant
 export MAVEN_HOME=/usr/local/opt/maven
 export GRADLE_HOME=/usr/local/opt/gradle
-export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
-export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
-export ANDROID_HOME=~/Library/Android/sdk
 
 export PATH=$ANT_HOME/bin:$PATH
 export PATH=$MAVEN_HOME/bin:$PATH
 export PATH=$GRADLE_HOME/bin:$PATH
-export PATH=$ANDROID_HOME/tools:$PATH
-export PATH=$ANDROID_HOME/platform-tools:$PATH
 
 # Colors for Man Pages (http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/)
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking

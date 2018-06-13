@@ -6,8 +6,6 @@ brew install gradle
 brew install maven
 
 # Android Tools
-brew cask install 'android-sdk'
-brew cask install 'android-ndk'
 brew cask install 'android-studio'
 brew cask install 'intel-haxm'
 
@@ -20,6 +18,3 @@ echo "==> Installed Brews"
 brew list
 echo "==> Installed Casks"
 brew cask list
-
-# Update the sdk
-sdkmanager --update

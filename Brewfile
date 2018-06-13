@@ -2,6 +2,7 @@
 
 # Taps
 brew tap homebrew/services
+brew tap beeftornado/rmtree
 
 # Tools
 brew install bcrypt
@@ -13,6 +14,7 @@ brew install gettext
 brew install git-flow
 brew install go
 brew install graphviz
+brew install java
 brew install httpie
 brew install libxml2 --with-python
 brew install openssl
