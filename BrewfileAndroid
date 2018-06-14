@@ -7,7 +7,6 @@ brew install maven
 
 # Android Tools
 brew cask install 'android-studio'
-brew cask install 'intel-haxm'
 
 # Cleanup
 brew cleanup
