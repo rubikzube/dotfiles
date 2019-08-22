@@ -19,7 +19,7 @@ brew install redis
 brew install ruby
 brew install the_silver_searcher
 brew install unar
-brew install vim --with-lua
+brew install vim
 brew install wget
 
 # Applications
