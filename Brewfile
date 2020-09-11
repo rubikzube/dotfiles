@@ -3,6 +3,7 @@
 # Taps
 brew tap homebrew/services
 brew tap beeftornado/rmtree
+brew tap homebrew/cask-fonts
 
 # Tools
 brew install curl
@@ -26,6 +27,7 @@ brew install wget
 brew cask install 'flux'
 brew cask install 'iterm2'
 brew cask install 'vlc'
+brew cask install 'font-fira-code'
 
 # Browsers
 brew cask install 'firefox'
