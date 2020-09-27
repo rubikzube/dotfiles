@@ -53,6 +53,10 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 # Alias csslint to work off a configuration file
 alias csslint="csslint --errors=\`tr -d '\n' < ~/.csslintrc\`"
 
+# Less improvements
+export LESSOPEN="| src-hilite-lesspipe.sh %s"
+export LESS=' -R -N '
+
 # Add fasd support (https://github.com/clvv/fasd)
 eval "$(fasd --init auto)"
 

@@ -18,6 +18,7 @@ brew install pkg-config
 brew install python
 brew install redis
 brew install ruby
+brew install source-highlight
 brew install the_silver_searcher
 brew install unar
 brew install vim
