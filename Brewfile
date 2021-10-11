@@ -15,7 +15,7 @@ brew install openssl
 brew install memcached
 brew install mysql
 brew install pkg-config
-brew install python
+brew install pyenv
 brew install redis
 brew install ruby
 brew install source-highlight
