@@ -9,6 +9,7 @@ brew tap homebrew/cask-fonts
 brew install curl
 brew install fasd
 brew install gcc
+brew install graphviz
 brew install httpie
 brew install java
 brew install openssl
