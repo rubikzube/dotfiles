@@ -28,22 +28,19 @@ brew install vim
 brew install wget
 
 # Applications
-brew cask install 'flux'
-brew cask install 'iterm2'
-brew cask install 'vlc'
-brew cask install 'font-fira-code'
+brew install cask 'flux'
+brew install cask 'iterm2'
+brew install cask 'vlc'
+brew install cask 'font-fira-code'
 
 # Browsers
-brew cask install 'firefox'
-brew cask install 'google-chrome'
-brew cask install 'opera'
+brew install cask 'firefox'
+brew install cask 'google-chrome'
+brew install cask 'opera'
 
 # Cleanup
 brew cleanup
-brew cask cleanup
 
 # List
 echo "==> Installed Brews"
 brew list
-echo "==> Installed Casks"
-brew cask list
