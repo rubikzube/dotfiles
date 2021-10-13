@@ -17,6 +17,8 @@ brew install memcached
 brew install mysql
 brew install pkg-config
 brew install pyenv
+brew install pyenv-virtualenv
+brew install pyenv-virtualenvwrapper
 brew install redis
 brew install ruby
 brew install source-highlight
