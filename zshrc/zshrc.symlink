@@ -42,10 +42,10 @@ export PATH=$MAVEN_HOME/bin:$PATH
 export PATH=$GRADLE_HOME/bin:$PATH
 
 # Python (https://github.com/pyenv/pyenv)
-export PYENV_ROOT="$HOME/.pyenv"'
-export PATH="$PYENV_ROOT/bin:$PATH"'
-eval "$(pyenv init --path)"'
-eval "$(pyenv virtualenv-init -)"'
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
 
 # Colors for Man Pages (http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/)
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
